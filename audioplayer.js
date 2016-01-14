@@ -12,12 +12,15 @@ document.getElementById("load-audio").onclick = function(){
 };
 
 document.getElementById("slowdown").onclick = function() {
+	alert("I'm now slowing down");
 	document.getElementById("audioguy").playbackRate -=0.01;
 };
 
 document.getElementById("speedup").onclick = function() {
+	alert("I'm now speeding up");
 	document.getElementById("audioguy").playbackRate +=0.01;
 };
 document.getElementById("speedreset").onclick = function() {
+	alert("I'm now resetting my speed.");
 	document.getElementById("audioguy").playbackRate = 1;
 };
