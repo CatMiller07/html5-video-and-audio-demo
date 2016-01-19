@@ -1,7 +1,9 @@
+var inputFile =  document.getElementById("source-input");
 
-
-if (localStorage.getItem("lastThingPlayed")){
-	
+console.log("input File : "+inputFile.files[0]);
+if (typeof(Storage) !== "undefined"){
+	 //store
+    localStorage.setItem("lastThingPlayed",inputFile.files[0] );
 	document.getElementById("audioguy").setAttribute("src",
 												 localStorage.getItem("lastThingPlayed"));
 }
@@ -9,7 +11,7 @@ if (localStorage.getItem("lastThingPlayed")){
 document.getElementById("load-audio").onclick = function(){
 	console.log("input file is " +  document.getElementById("source-input").value)
 	document.getElementById("audioguy").setAttribute("src",
-	                                    document.getElementById("source-input").value
+	                                   localStorage.getItem("lastThingPlayed")
 										);
 };
 

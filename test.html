@@ -1,0 +1,25 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>tester</title>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<script type="text/javascript">
+function getPath(){
+      var str = document.getElementById('blaat').value;
+      // lastIndexOf('\\') you need to use two \\'s because you use \ to escape
+      str = str.substring(0, str.lastIndexOf('\\'));
+      //if you want a closing \ just add a \ to the str (str += '\')
+      document.getElementById('verborgenBlaat').value = str;
+      // alert to proof it sets the directory 
+      alert(document.getElementById('verborgenBlaat').value)
+}
+</script>
+</head>
+<body>
+   <form onsubmit="getPath();">
+<input type="hidden" id="verborgenBlaat" value="" />
+<input type="file" id="blaat" value="" />
+<input type="submit">
+</form>
+</body>
+</html>
