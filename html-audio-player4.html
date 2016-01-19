@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Video and Audio</title>
+
+   <!--- <link rel="stylesheet" href="css/normalize.css"> --->
+    <link href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+ 
+	<body>
+    <h1>Paste Video Source:</h1>
+	    <input id="source-input" type="file" >
+		
+		
+	<center>
+       <button class="btn" id="load-audio">Load Audio</button>
+	</center>	
+	<br>
+		
+	<div id="audio-controls" class="center">
+		 <audio id="audioguy" controls></audio>
+		 <button class="btn2" id="speedup">+</button>
+	     <button class="btn2" id="slowdown">-</button>	
+	     <button class="btn2" id="speedreset">.</button>	
+	</div>	
+		
+	<!-- jQuery 	
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="js/vendor/jquery.ui.widget.js"></script>
+	<script src="js/jquery.iframe-transport.js"></script>
+	<script src="js/jquery.fileupload.js"></script>	
+    -->
+	<script src="audioplayer3.js"></script>
